@@ -1,0 +1,65 @@
+/*style.css*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  /*This use s flexbox for the overall page*/
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.wrapper {
+  /* Main content wrapper, allows main to grow*/
+  flex: 1;
+}
+/*Banner Styling*/
+.banner {
+  background-color: #333333;
+  color: rgba(255, 255, 255, 0.952);
+  padding: 20px;
+  text-align: center;
+}
+/*Navigation styling*/
+.navigation ul {
+  list-style-type: none;
+  display: flex; /*Align*/
+  background-color: #d2dfb9;
+}
+.navigation ul li a {
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-decoration: none;
+}
+.navigation ul li a hover {
+  background-color: #555;
+}
+/*Content Styling*/
+.content {
+  padding: 20px;
+  /*you can add a sidebar here using a two-column layout*/
+}
+/*Footer Styling*/
+.footer {
+  background-color: #333;
+  color: #e6ebe0;
+  text-align: center;
+  padding: 10px;
+  margin-top: auto; /*pushes the footer to the bottom*/
+}
+/*Optinal: Add basic responsiveness using media queries*/
+@media (max-width: 600px) {
+  .navigation ul {
+    flex-direction: column; /*Stacks navigation links vertically on small screens*/
+  }
+}
+.navigation ul li a {
+  text-align: center;
+}
+img {
+  width: 100%;
+}
