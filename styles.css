@@ -30,7 +30,7 @@ body {
   background-color: #d2dfb9;
 }
 .navigation ul li a {
-  color: white;
+  color: #333;
   padding: 15px 20px;
   display: block;
   text-decoration: none;
@@ -61,6 +61,7 @@ body {
   text-align: center;
 }
 img {
+  width: 100%;
   max-width: 50%;
   max-height: 50%;
 }
